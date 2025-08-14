@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
   app: {
+    baseURL: '/tpc-yonmartinez.github.io/',
     head: {
       script: [
         { src: '//js.hsforms.net/forms/v2.js', type: 'text/javascript', defer: true }
@@ -13,14 +14,16 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
   ],
-    ssr: true,
-    target: 'static',
-    nitro: {
-      preset: 'static',
-      output: {
-        publicDir: 'docs',
-      },
+
+  ssr: false,
+  target: 'static',
+  nitro: {
+    preset: 'static',
+    output: {
+      publicDir: 'docs',
     },
+  },
+
   i18n: {
     defaultLocale: 'en',
     lazy: true,
