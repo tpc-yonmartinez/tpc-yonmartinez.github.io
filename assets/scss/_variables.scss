@@ -6,6 +6,14 @@ $padding-container-s: 20px;
 $padding-container-m: 10vw;
 
 // Measures
+// Border Radius Standard
+$radius-s: 5px;
+$radius-m: 10px;
+
+// Border Rounded (IMG or BOX)
+$border-s: 0px; // WEDD: LB 0px   SG  5px;
+$border-m: 0px; // WEDD: LB 0px  SG 10px;
+
 $border-radius: 10px;
 $border-radius-s: 5px;
 $border-radius-m: 0px;
@@ -129,6 +137,10 @@ $special-price: #009E10 !default;
 $killer-price: #E5A500 !default;
 
 :root {
+  --radius-s: #{$radius-s};
+  --radius-m: #{$radius-m};
+  --border-s: #{$border-s};
+  --border-m: #{$border-m};
   --inputs-bg: #{$inputs-bg};
   --inputs-border: #{$inputs-border};
   --inputs-focus: #{$inputs-focus};
