@@ -52,29 +52,7 @@ const data = {
           "url": "assets/img/index/Badges/Moon_Palace_ff32ef74b8.png",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "large": {
-              "url": "https://www.thepalacecompany.com/large_Moon_Palace_ff32ef74b8.png"
-            },
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_Moon_Palace_ff32ef74b8.png"
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_Moon_Palace_ff32ef74b8.png"
-            },
-            "xlarge": {
-              "url": "https://www.thepalacecompany.com/xlarge_Moon_Palace_ff32ef74b8.png"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_Moon_Palace_ff32ef74b8.png"
-            },
-            "xxlarge": {
-              "url": "https://www.thepalacecompany.com/xxlarge_Moon_Palace_ff32ef74b8.png"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_Moon_Palace_ff32ef74b8.png"
-            }
-          },
+          "imageformats": null,
           "mime": "image/png",
           "isUrlSigned": false
         }
@@ -88,14 +66,7 @@ const data = {
           "url": "assets/img/index/Badges/Palace_Resorts_Blue_605ef2b293.png",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_Palace_Resorts_Blue_605ef2b293.png"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_Palace_Resorts_Blue_605ef2b293.png"
-            }
-          },
+          "imageformats": null,
           "mime": "image/png",
           "isUrlSigned": false
         }
@@ -193,26 +164,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/playacar_palace_resort_the_palace_company_ed085f38e0.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "large": {
-              "url": "https://www.thepalacecompany.com/large_playacar_palace_resort_the_palace_company_ed085f38e0.webp"
-            },
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_playacar_palace_resort_the_palace_company_ed085f38e0.webp"
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_playacar_palace_resort_the_palace_company_ed085f38e0.webp"
-            },
-            "xlarge": {
-              "url": "https://www.thepalacecompany.com/xlarge_playacar_palace_resort_the_palace_company_ed085f38e0.webp"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_playacar_palace_resort_the_palace_company_ed085f38e0.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_playacar_palace_resort_the_palace_company_ed085f38e0.webp"
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -233,17 +185,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/Content_col_1_42e728c142.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_Content_col_1_42e728c142.webp"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_Content_col_1_42e728c142.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_Content_col_1_42e728c142.webp"
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -264,26 +206,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/happiness_palace_foundation_the_palace_company_17d90331a6.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "large": {
-              "url": "https://www.thepalacecompany.com/large_happiness_palace_foundation_the_palace_company_17d90331a6.webp"
-            },
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_happiness_palace_foundation_the_palace_company_17d90331a6.webp"
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_happiness_palace_foundation_the_palace_company_17d90331a6.webp"
-            },
-            "xlarge": {
-              "url": "https://www.thepalacecompany.com/xlarge_happiness_palace_foundation_the_palace_company_17d90331a6.webp"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_happiness_palace_foundation_the_palace_company_17d90331a6.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_happiness_palace_foundation_the_palace_company_17d90331a6.webp"
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -341,24 +264,7 @@ const data = {
           "url": "https://thepalacecompany.com/beach_palace_view_palace_resorts_890d076ece_eccda81456.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "small": {
-              "url": "https://thepalacecompany.com/small_beach_palace_view_palace_resorts_890d076ece_eccda81456.webp",
-              "sizeInBytes": 33444
-            },
-            "medium": {
-              "url": "https://thepalacecompany.com/medium_beach_palace_view_palace_resorts_890d076ece_eccda81456.webp",
-              "sizeInBytes": 61634
-            },
-            "xsmall": {
-              "url": "https://thepalacecompany.com/xsmall_beach_palace_view_palace_resorts_890d076ece_eccda81456.webp",
-              "sizeInBytes": 10110
-            },
-            "thumbnail": {
-              "url": "https://thepalacecompany.com/thumbnail_beach_palace_view_palace_resorts_890d076ece_eccda81456.webp",
-              "sizeInBytes": 6444
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -379,26 +285,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/activities_foster_home_palace_foundation_the_palace_company_aca5efc8c7.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "large": {
-              "url": "https://www.thepalacecompany.com/large_activities_foster_home_palace_foundation_the_palace_company_aca5efc8c7.webp"
-            },
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_activities_foster_home_palace_foundation_the_palace_company_aca5efc8c7.webp"
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_activities_foster_home_palace_foundation_the_palace_company_aca5efc8c7.webp"
-            },
-            "xlarge": {
-              "url": "https://www.thepalacecompany.com/xlarge_activities_foster_home_palace_foundation_the_palace_company_aca5efc8c7.webp"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_activities_foster_home_palace_foundation_the_palace_company_aca5efc8c7.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_activities_foster_home_palace_foundation_the_palace_company_aca5efc8c7.webp"
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -450,26 +337,7 @@ const data = {
       "url": "assets/img/index/Align/environment-palace-foundation-the-palace-company.webp",
       "caption": null,
       "alternativeText": null,
-      "imageformats": {
-        "large": {
-          "url": "https://www.thepalacecompany.com/large_environment_palace_foundation_the_palace_company_528674aef3.webp"
-        },
-        "small": {
-          "url": "https://www.thepalacecompany.com/small_environment_palace_foundation_the_palace_company_528674aef3.webp"
-        },
-        "medium": {
-          "url": "https://www.thepalacecompany.com/medium_environment_palace_foundation_the_palace_company_528674aef3.webp"
-        },
-        "xlarge": {
-          "url": "https://www.thepalacecompany.com/xlarge_environment_palace_foundation_the_palace_company_528674aef3.webp"
-        },
-        "xsmall": {
-          "url": "https://www.thepalacecompany.com/xsmall_environment_palace_foundation_the_palace_company_528674aef3.webp"
-        },
-        "thumbnail": {
-          "url": "https://www.thepalacecompany.com/thumbnail_environment_palace_foundation_the_palace_company_528674aef3.webp"
-        }
-      },
+      "imageformats": null,
       "mime": "image/webp",
       "isUrlSigned": false
     },
@@ -507,32 +375,7 @@ const data = {
           "url": "https://thepalacecompany.com/BLOG_Main_TPC_7d0bfbf73a.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "large": {
-              "url": "https://thepalacecompany.com/large_BLOG_Main_TPC_7d0bfbf73a.webp",
-              "sizeInBytes": 9208
-            },
-            "small": {
-              "url": "https://thepalacecompany.com/small_BLOG_Main_TPC_7d0bfbf73a.webp",
-              "sizeInBytes": 4904
-            },
-            "medium": {
-              "url": "https://thepalacecompany.com/medium_BLOG_Main_TPC_7d0bfbf73a.webp",
-              "sizeInBytes": 7252
-            },
-            "xlarge": {
-              "url": "https://thepalacecompany.com/xlarge_BLOG_Main_TPC_7d0bfbf73a.webp",
-              "sizeInBytes": 12858
-            },
-            "xsmall": {
-              "url": "https://thepalacecompany.com/xsmall_BLOG_Main_TPC_7d0bfbf73a.webp",
-              "sizeInBytes": 2138
-            },
-            "thumbnail": {
-              "url": "https://thepalacecompany.com/thumbnail_BLOG_Main_TPC_7d0bfbf73a.webp",
-              "sizeInBytes": 1664
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -559,32 +402,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/The_Palace_Company_Gibran_Chapur_New_CEO_ec66af51ae.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "large": {
-              "url": "https://www.thepalacecompany.com/large_The_Palace_Company_Gibran_Chapur_New_CEO_ec66af51ae.webp",
-              "sizeInBytes": 18102
-            },
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_The_Palace_Company_Gibran_Chapur_New_CEO_ec66af51ae.webp",
-              "sizeInBytes": 7086
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_The_Palace_Company_Gibran_Chapur_New_CEO_ec66af51ae.webp",
-              "sizeInBytes": 12784
-            },
-            "xlarge": {
-              "url": "https://www.thepalacecompany.com/xlarge_The_Palace_Company_Gibran_Chapur_New_CEO_ec66af51ae.webp",
-              "sizeInBytes": 25138
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_The_Palace_Company_Gibran_Chapur_New_CEO_ec66af51ae.webp",
-              "sizeInBytes": 2690
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_The_Palace_Company_Gibran_Chapur_New_CEO_ec66af51ae.webp",
-              "sizeInBytes": 2006
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -611,32 +429,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/jose_chapur_cader_the_palace_company_cc7a3de70a.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "large": {
-              "url": "https://www.thepalacecompany.com/large_jose_chapur_cader_the_palace_company_cc7a3de70a.webp",
-              "sizeInBytes": 49386
-            },
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_jose_chapur_cader_the_palace_company_cc7a3de70a.webp",
-              "sizeInBytes": 22586
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_jose_chapur_cader_the_palace_company_cc7a3de70a.webp",
-              "sizeInBytes": 37024
-            },
-            "xlarge": {
-              "url": "https://www.thepalacecompany.com/xlarge_jose_chapur_cader_the_palace_company_cc7a3de70a.webp",
-              "sizeInBytes": 65818
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_jose_chapur_cader_the_palace_company_cc7a3de70a.webp",
-              "sizeInBytes": 9210
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_jose_chapur_cader_the_palace_company_cc7a3de70a.webp",
-              "sizeInBytes": 6406
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -663,17 +456,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/Content_3col_article_900x540_8c3ccf3bcc.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_Content_3col_article_900x540_8c3ccf3bcc.webp"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_Content_3col_article_900x540_8c3ccf3bcc.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_Content_3col_article_900x540_8c3ccf3bcc.webp"
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -700,20 +483,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/domenico_content_aling_1080x813_83962a1450.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_domenico_content_aling_1080x813_83962a1450.webp"
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_domenico_content_aling_1080x813_83962a1450.webp"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_domenico_content_aling_1080x813_83962a1450.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_domenico_content_aling_1080x813_83962a1450.webp"
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -740,20 +510,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/thepalacecompany_presshome_d008056788.png",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_thepalacecompany_presshome_d008056788.png"
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_thepalacecompany_presshome_d008056788.png"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_thepalacecompany_presshome_d008056788.png"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_thepalacecompany_presshome_d008056788.png"
-            }
-          },
+          "imageformats": null,
           "mime": "image/png",
           "isUrlSigned": false
         },
@@ -780,17 +537,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/pe_cava_3_col_900x540_24fe5208af_2bcedd168f.jpg",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_pe_cava_3_col_900x540_24fe5208af_2bcedd168f.jpg"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_pe_cava_3_col_900x540_24fe5208af_2bcedd168f.jpg"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_pe_cava_3_col_900x540_24fe5208af_2bcedd168f.jpg"
-            }
-          },
+          "imageformats": null,
           "mime": "image/jpeg",
           "isUrlSigned": false
         },
@@ -817,23 +564,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/Baglioni_Hotel_Luna_San_Giorgio_Terrace_night_10112022_cc2f59b4dd_3b70861d2a.png",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "large": {
-              "url": "https://www.thepalacecompany.com/large_Baglioni_Hotel_Luna_San_Giorgio_Terrace_night_10112022_cc2f59b4dd_3b70861d2a.png"
-            },
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_Baglioni_Hotel_Luna_San_Giorgio_Terrace_night_10112022_cc2f59b4dd_3b70861d2a.png"
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_Baglioni_Hotel_Luna_San_Giorgio_Terrace_night_10112022_cc2f59b4dd_3b70861d2a.png"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_Baglioni_Hotel_Luna_San_Giorgio_Terrace_night_10112022_cc2f59b4dd_3b70861d2a.png"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_Baglioni_Hotel_Luna_San_Giorgio_Terrace_night_10112022_cc2f59b4dd_3b70861d2a.png"
-            }
-          },
+          "imageformats": null,
           "mime": "image/png",
           "isUrlSigned": false
         },
@@ -860,20 +591,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/gibran_chapur_7f07822f5e.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_gibran_chapur_7f07822f5e.webp"
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_gibran_chapur_7f07822f5e.webp"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_gibran_chapur_7f07822f5e.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_gibran_chapur_7f07822f5e.webp"
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -908,26 +626,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/beach_cleaning_environment_palace_foundation_the_palace_company_80e0e647f2.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "large": {
-              "url": "https://www.thepalacecompany.com/large_beach_cleaning_environment_palace_foundation_the_palace_company_80e0e647f2.webp"
-            },
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_beach_cleaning_environment_palace_foundation_the_palace_company_80e0e647f2.webp"
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_beach_cleaning_environment_palace_foundation_the_palace_company_80e0e647f2.webp"
-            },
-            "xlarge": {
-              "url": "https://www.thepalacecompany.com/xlarge_beach_cleaning_environment_palace_foundation_the_palace_company_80e0e647f2.webp"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_beach_cleaning_environment_palace_foundation_the_palace_company_80e0e647f2.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_beach_cleaning_environment_palace_foundation_the_palace_company_80e0e647f2.webp"
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -947,29 +646,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/members_residence_palace_elite_the_palace_company_537eb3c7eb.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "large": {
-              "url": "https://www.thepalacecompany.com/large_members_residence_palace_elite_the_palace_company_537eb3c7eb.webp"
-            },
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_members_residence_palace_elite_the_palace_company_537eb3c7eb.webp"
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_members_residence_palace_elite_the_palace_company_537eb3c7eb.webp"
-            },
-            "xlarge": {
-              "url": "https://www.thepalacecompany.com/xlarge_members_residence_palace_elite_the_palace_company_537eb3c7eb.webp"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_members_residence_palace_elite_the_palace_company_537eb3c7eb.webp"
-            },
-            "xxlarge": {
-              "url": "https://www.thepalacecompany.com/xxlarge_members_residence_palace_elite_the_palace_company_537eb3c7eb.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_members_residence_palace_elite_the_palace_company_537eb3c7eb.webp"
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -989,29 +666,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/lily_1_af6e7d8eb8_Content_center_3600x1543_59e47ca4ba.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "large": {
-              "url": "https://www.thepalacecompany.com/large_lily_1_af6e7d8eb8_Content_center_3600x1543_59e47ca4ba.webp"
-            },
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_lily_1_af6e7d8eb8_Content_center_3600x1543_59e47ca4ba.webp"
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_lily_1_af6e7d8eb8_Content_center_3600x1543_59e47ca4ba.webp"
-            },
-            "xlarge": {
-              "url": "https://www.thepalacecompany.com/xlarge_lily_1_af6e7d8eb8_Content_center_3600x1543_59e47ca4ba.webp"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_lily_1_af6e7d8eb8_Content_center_3600x1543_59e47ca4ba.webp"
-            },
-            "xxlarge": {
-              "url": "https://www.thepalacecompany.com/xxlarge_lily_1_af6e7d8eb8_Content_center_3600x1543_59e47ca4ba.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_lily_1_af6e7d8eb8_Content_center_3600x1543_59e47ca4ba.webp"
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -1031,16 +686,7 @@ const data = {
           "url": "https://thepalacecompany.com/Vlad01_2_8d772238da.png",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "xsmall": {
-              "url": "https://thepalacecompany.com/xsmall_Vlad01_2_8d772238da.png",
-              "sizeInBytes": 111903
-            },
-            "thumbnail": {
-              "url": "https://thepalacecompany.com/thumbnail_Vlad01_2_8d772238da.png",
-              "sizeInBytes": 30343
-            }
-          },
+          "imageformats": null,
           "mime": "image/png",
           "isUrlSigned": false
         },
@@ -1060,32 +706,7 @@ const data = {
           "url": "https://thepalacecompany.com/apertura_the_grand_punta_cana_57845d6a9d.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "large": {
-              "url": "https://thepalacecompany.com/large_apertura_the_grand_punta_cana_57845d6a9d.webp",
-              "sizeInBytes": 55758
-            },
-            "small": {
-              "url": "https://thepalacecompany.com/small_apertura_the_grand_punta_cana_57845d6a9d.webp",
-              "sizeInBytes": 26104
-            },
-            "medium": {
-              "url": "https://thepalacecompany.com/medium_apertura_the_grand_punta_cana_57845d6a9d.webp",
-              "sizeInBytes": 43370
-            },
-            "xlarge": {
-              "url": "https://thepalacecompany.com/xlarge_apertura_the_grand_punta_cana_57845d6a9d.webp",
-              "sizeInBytes": 74682
-            },
-            "xsmall": {
-              "url": "https://thepalacecompany.com/xsmall_apertura_the_grand_punta_cana_57845d6a9d.webp",
-              "sizeInBytes": 9552
-            },
-            "thumbnail": {
-              "url": "https://thepalacecompany.com/thumbnail_apertura_the_grand_punta_cana_57845d6a9d.webp",
-              "sizeInBytes": 6300
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -1105,29 +726,7 @@ const data = {
           "url": "https://www.thepalacecompany.com/Content_Center_3600x1543_d6dd100f55.webp",
           "caption": null,
           "alternativeText": null,
-          "imageformats": {
-            "large": {
-              "url": "https://www.thepalacecompany.com/large_Content_Center_3600x1543_d6dd100f55.webp"
-            },
-            "small": {
-              "url": "https://www.thepalacecompany.com/small_Content_Center_3600x1543_d6dd100f55.webp"
-            },
-            "medium": {
-              "url": "https://www.thepalacecompany.com/medium_Content_Center_3600x1543_d6dd100f55.webp"
-            },
-            "xlarge": {
-              "url": "https://www.thepalacecompany.com/xlarge_Content_Center_3600x1543_d6dd100f55.webp"
-            },
-            "xsmall": {
-              "url": "https://www.thepalacecompany.com/xsmall_Content_Center_3600x1543_d6dd100f55.webp"
-            },
-            "xxlarge": {
-              "url": "https://www.thepalacecompany.com/xxlarge_Content_Center_3600x1543_d6dd100f55.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.thepalacecompany.com/thumbnail_Content_Center_3600x1543_d6dd100f55.webp"
-            }
-          },
+          "imageformats": null,
           "mime": "image/webp",
           "isUrlSigned": false
         },
@@ -1178,17 +777,7 @@ const data = {
           "caption": null,
           "width": 768,
           "height": 650,
-          "imageformats": {
-            "small": {
-              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
-            },
-            "xsmall": {
-              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
-            }
-          },
+          "imageformats": null,
           "hash": "los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23",
           "ext": ".webp",
           "mime": "image/webp",
@@ -1237,26 +826,7 @@ const data = {
           "caption": "Achieve a complete state of wellbeing",
           "width": 1620,
           "height": 1080,
-          "imageformats": {
-            "large": {
-              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
-            },
-            "small": {
-              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
-            },
-            "medium": {
-              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
-            },
-            "xlarge": {
-              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
-            },
-            "xsmall": {
-              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.leblancsparesorts.com/ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba.webp"
-            }
-          },
+          "imageformats": null,
           "hash": "ancestral-massage-spa-le-blanc-spa-resorts_cd9c0112ba",
           "ext": ".webp",
           "mime": "image/webp",
@@ -1305,17 +875,7 @@ const data = {
           "caption": null,
           "width": 768,
           "height": 650,
-          "imageformats": {
-            "small": {
-              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
-            },
-            "xsmall": {
-              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
-            },
-            "thumbnail": {
-              "url": "https://www.leblancsparesorts.com/los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23.webp"
-            }
-          },
+          "imageformats": null,
           "hash": "los_cabos_travel_destination_le_blanc_spa_resorts_c54af9ab23",
           "ext": ".webp",
           "mime": "image/webp",
