@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "FreightTextMedium";
+  src: url("assets/fonts/freighttext/FreightText-Medium.woff") format('woff'),
+       url("assets/fonts/freighttext/FreightText-Medium.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FreightSansBook";
+  src: url("assets/fonts/freightsans/FreightSans-Book.woff") format('woff'),
+       url("assets/fonts/freightsans/FreightSans-Book.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("assets/fonts/opensans/OpenSans-Regular.eot");
+  src: url("assets/fonts/opensans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("assets/fonts/opensans/OpenSans-Regular.woff") format("woff"),
+    url("assets/fonts/opensans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("assets/fonts/opensans/OpenSans-Light.eot");
+  src: url("assets/fonts/opensans/OpenSans-Light.eot?#iefix") format("embedded-opentype"),
+    url("assets/fonts/opensans/OpenSans-Light.woff2") format("woff2"),
+    url("assets/fonts/opensans/OpenSans-Light.woff") format("woff"),
+    url("assets/fonts/opensans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Eldorado Display Italic";
+  src: url("assets/fonts/eldorado/EldoradoDisplay-Italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Eldorado Display Roman";
+  src: url("assets/fonts/eldorado/EldoradoDisplay-Roman.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "neue Radia Regular";
+  src: url("assets/fonts/neueradial/neueRadial-C-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "neue Radia Light";
+  src: url("assets/fonts/neueradial/neueRadial-C-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

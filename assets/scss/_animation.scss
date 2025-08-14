@@ -1,0 +1,76 @@
+.animate-palace {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.title-in {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  transform: translateY(0);
+  animation-name: textIntro;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease;
+}
+@keyframes textIntro {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes absoluteToFixed {
+  0% {
+    position: absolute;
+    top: -100%;
+    left: 0;
+  }
+  25% {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+  }
+}
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    left: 0;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-palace-fade-in {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}

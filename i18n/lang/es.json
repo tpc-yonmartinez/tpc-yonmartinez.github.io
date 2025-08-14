@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de Nosotros",
+    "destination": "Destinos",
+    "legal": "Legal",
+    "contact": "Contáctanos"
+  },
+  "title": "Titulo de ejemplo",
+  "from": "Desde",
+  "night": "promedio por noche",
+  "share": "Compartir",
+  "book": "Fechas de reserva:",
+  "stay": "Fechas de viaje:",
+  "back": "Volver",
+  "more": "Ver más",
+  "less": "Ver menos",
+  "gallerygrid": {
+    "all": "Todo"
+  },
+  "timer": {
+    "day": "Días",
+    "hour": "Hr.",
+    "min": "Min.",
+    "sec": "Seg."
+  },
+  "destination": {
+    "all": "Todas las marcas",
+    "suball": "Todos"
+  },
+  "booking": {
+    "action": "Reservar",
+    "buttons": {
+      "promocode": {
+        "clear": "Remover codigo",
+        "apply": "Aplicar",
+        "info": "Información",
+        "add": "Agregar codigo",
+        "placeholder": "Escribe el código"
+      },
+      "back": "Atras",
+      "close": "Cerrar",
+      "group": "Reserva grupal",
+      "airport": {
+        "unchecked": "Agregar vuelo",
+        "checked": "Remover vuelo"
+      }
+    },
+    "inputs": {
+      "airports": {
+        "searchplaceholder": "Escribe nombre del aeropuerto",
+        "placeholder": "Selecciona aeropuerto"
+      },
+      "resorts": {
+        "placeholder": "Selecciona resort",
+        "select": "Seleccionado"
+      },
+      "dates": {
+        "approximateprices": "Precios aproximados en {currency} por estancia de 1 noche",
+        "checkin": "Fecha de entrada",
+        "checkout": "Fecha de salida",
+        "next": "SIGUIENTE",
+        "night": "Noche seleccionada",
+        "nights": "Noches seleccionadas",
+        "placeholder": "Selecciona tus fechas de viaje",
+        "specialrates": "Tarifas especiales",
+        "unavailable": "No disponible",
+        "soldout": "VENDIDO",
+        "skip": "Saltar",
+        "lowestrates": "Tarifa más baja"
+      },
+      "guests": {
+        "placeholder": "Huéspedes",
+        "roomTitle": "Habitación",
+        "roomSingular": "Habitación",
+        "roomPlural": "Habitaciones",
+        "guestSingular": "Huesped",
+        "guestPlural": "Huespedes",
+        "adults": "Adultos",
+        "children": "Niños",
+        "child": "Niño",
+        "age": "Edad",
+        "deleteRoom": "Remover",
+        "addRoom": "Agregar habitación",
+        "maxRoom": "Más habitaciones"
+      }
+    }
+  },
+  "landing": {
+    "scrollDown": "NAVEGAR HACIA ABAJO"
+  },
+  "error": {
+    "code": {
+      "404": "404",
+      "500": "500"
+    },
+    "description": {
+      "404": "Lo sentimos, no hemos podido encontrar la pagina que buscas",
+      "500": "Lo sentimos, ha ocurrido un error en el servidor"
+    },
+    "trasnlation": "Lo sentimos, no hemos podido traducir esta pagina"
+  },
+  "rfp": {
+    "send": "Enviar Formulario",
+    "button": "Finalizar solicitud",
+    "buttonretry": "Reintentar",
+    "prefix": "Prefijo",
+    "destination": "Seleccione un Resort",
+    "required": "Este campo es obligatorio",
+    "error": {
+      "email": "Por favor ingrese un correo valido",
+      "phone": "Por favor ingresa un número de teléfono válido",
+      "prefix": "Por favor ingrese un prefijo",
+      "checkbox": "Por favor seleccione una opción",
+      "number": "Por favor ingresa un número válido"
+    }
+  },
+  "catalog": {
+    "search": "Buscar",
+    "perpage": "Elementos por página",
+    "button": "Solicitar cotización",
+    "list": "Elige tu opción",
+    "modal": {
+      "back": "Regresar",
+      "button": "Solicitar cotización"
+    },
+    "rating": "de 5.0"
+  }
+}

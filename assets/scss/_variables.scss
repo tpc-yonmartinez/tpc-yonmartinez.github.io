@@ -1,0 +1,203 @@
+@use 'sass:math';
+@use 'fonts';
+
+// Padding Standard
+$padding-container-s: 20px;
+$padding-container-m: 10vw;
+
+// Measures
+$border-radius: 10px;
+$border-radius-s: 5px;
+$border-radius-m: 0px;
+$border-radius-embed: 5px;
+
+// Space
+$space-margin-top: 50px;
+$space-margin-bottom: 50px;
+$space-margin-top-s: 25px;
+$space-margin-bottom-s: 25px;
+
+// Media Queries
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+// Fonts Family
+$font-primary: 'Tenor Sans', sans-serif !default;
+$font-secondary: 'Public Sans', sans-serif !default;
+// Font Sizes
+$font-size-title-mobile: 40px;
+$font-size-title-table: 46px;
+$font-size-title-desktop: 48px;
+$font-size-title-medium: 30px;
+$font-size-title-small: 30px;
+$font-size-title-xsmall: 16px;
+$font-size-body: 20px;
+$font-size-body-small: 11px;
+$font-size-lm: 30px;
+$font-size-l: 22px;
+$font-size-s: 16px;
+$font-size-xs: 14px;
+$font-size-xxs: 11px;
+$font-size-xxxs: 8px;
+// Font Weight
+$font-weight-base: 400;
+$font-weight-bold: 600;
+// Color System
+$black: #000000 !default;
+$white: #FFFFFF !default;
+// Input Standard
+$inputs-height: 60px;
+$inputs-text-size: 14px;
+$inputs-label-size: 11px;
+$inputs-bg: #EDECE4 !default;
+$inputs-border: #DBDADA !default;
+$inputs-focus: #000000 !default;
+$inputs-text: #000000 !default;
+$inputs-solid: #B88F69 !default;
+$error: #B88F69 !default;
+// Buttons
+$btn-font-size: 14px;
+$btn-text: #000000 !default;
+$btn-text-dark: #FFFFFF !default;
+$btn-text-alternative: #FFFFFF !default;
+$btn-primary: #254D6E !default;
+$btn-primary-hover: #1B3D5C !default;
+$btn-primary-active: #16314C !default;
+$btn-secondary: #FFFFFF !default;
+$btn-secondary-hover: #FAFAFA !default;
+$btn-secondary-active: #F4F4F5 !default;
+$btn-exeption-ghost: #FFFFFF !default;
+$btn-exeption-ghost-hover: #FFFFFF !default;
+$btn-exeption-ghost-active: #FFFFFF !default;
+$btn-link: #B88F69 !default;
+$btn-link-hover: #254D6E !default;
+$btn-link-dark: #FFFFFF !default;
+$btn-link-dark-hover: #B88F69 !default;
+$btn-alternative: #B88F69 !default;
+$btn-alternative-hover: #AB825D !default;
+$btn-alternative-active: #9B734E !default;
+// Footer
+$footer-bg: #FAFAFA !default;
+$footer-text: #FFFFFF !default;
+$footer-title: #FFFFFF !default;
+$footer-border: #DBDADA !default;
+$footer-link: #B88F69 !default;
+$footer-link-hover: #FFFFFF !default;
+$footer-button: #FFFFFF !default;
+$footer-button-hover: #FFFFFF1a !default;
+$footer-button-active: #FFFFFF33 !default;
+// Header
+$header-ham-bg: #1C1C1C !default;
+$header-ham-text: #FFFFFF !default;
+$header-border: #DBDADA !default;
+// Page General
+$page-bg: #FFFFFF !default;
+$decorative-color: #B88F69 !default;
+$border-color: #DBDADA !default;
+$color-base-dark: #FFFFFF !default;
+$color-base: #000000 !default;
+$color-base-alt: #FFFFFF !default;
+$filter-first: #FAFAFA !default;
+$filter-second: #EDECE4 !default;
+$title-principal: #254D6E !default;
+$title-alt: #000000 !default;
+$body-alt: #000000 !default;
+$decorative-text: #254D6E !default;
+$bg-dark: #1C1C1C !default;
+$bg-box: #FAFAFA !default;
+$bg-alt: #1C1C1C !default;
+$component-bg-alt: #FAFAFA !default;
+$arrow: #000000 !default;
+$arrow-hover: #B88F69 !default;
+$hero-bold: #FFFFFF !default;
+// Booking
+$booking-bg: #EDECE4 !default;
+$booking-tag: #000000 !default;
+$booking-text: #000000 !default;
+$booking-text-dark: #FFFFFF !default;
+$booking-text-hover: #B88F69 !default;
+$booking-border: #DBDADA !default;
+$booking-border-dark: #000000 !default;
+$booking-select-date: #000000 !default;
+$booking-svg: #000000 !default;
+$booking-box: #FAFAFA !default;
+$booking-control: #B88F69 !default;
+$special-price: #009E10 !default;
+$killer-price: #E5A500 !default;
+
+:root {
+  --inputs-bg: #{$inputs-bg};
+  --inputs-border: #{$inputs-border};
+  --inputs-focus: #{$inputs-focus};
+  --inputs-text: #{$inputs-text};
+  --inputs-solid: #{$inputs-solid};
+  --error: #{$error};
+  --btn-text: #{$btn-text};
+  --btn-text-dark: #{$btn-text-dark};
+  --btn-text-alternative: #{$btn-text-alternative};
+  --btn-primary: #{$btn-primary};
+  --btn-primary-hover: #{$btn-primary-hover};
+  --btn-primary-active: #{$btn-primary-active};
+  --btn-secondary: #{$btn-secondary};
+  --btn-secondary-hover: #{$btn-secondary-hover};
+  --btn-secondary-active: #{$btn-secondary-active};
+  --btn-exeption-ghost: #{$btn-exeption-ghost};
+  --btn-exeption-ghost-hover: #{$btn-exeption-ghost-hover};
+  --btn-exeption-ghost-active: #{$btn-exeption-ghost-active};
+  --btn-link: #{$btn-link};
+  --btn-link-hover: #{$btn-link-hover};
+  --btn-link-dark: #{$btn-link-dark};
+  --btn-link-dark-hover: #{$btn-link-dark-hover};
+  --btn-alternative: #{$btn-alternative};
+  --btn-alternative-hover: #{$btn-alternative-hover};
+  --btn-alternative-active: #{$btn-alternative-active};
+  --black: #{$black};
+  --white: #{$white};
+  --footer-bg: #{$footer-bg};
+  --footer-text: #{$footer-text};
+  --footer-title: #{$footer-title};
+  --footer-border: #{$footer-border};
+  --footer-link :#{$footer-link};
+  --footer-link-hover :#{$footer-link-hover};
+  --footer-button :#{$footer-button};
+  --footer-button-hover :#{$footer-button-hover};
+  --footer-button-active :#{$footer-button-active};
+  --header-ham-bg: #{$header-ham-bg};
+  --header-ham-text: #{$header-ham-text};
+  --header-border: #{$header-border};
+  --page-bg: #{$page-bg};
+  --decorative-color: #{$decorative-color};
+  --border-color: #{$border-color};
+  --color-base-dark: #{$color-base-dark};
+  --color-base: #{$color-base};
+  --color-base-alt: #{$color-base-alt};
+  --filter-first: #{$filter-first};
+  --filter-second: #{$filter-second};
+  --title-principal: #{$title-principal};
+  --title-alt: #{$title-alt};
+  --body-alt: #{$body-alt};
+  --decorative-text: #{$decorative-text};
+  --bg-dark: #{$bg-dark};
+  --bg-box: #{$bg-box};
+  --bg-alt: #{$bg-alt};
+  --component-bg-alt: #{$component-bg-alt};
+  --arrow: #{$arrow};
+  --arrow-hover: #{$arrow-hover};
+  --hero-bold: #{$hero-bold};
+  --booking-bg: #{$booking-bg};
+  --booking-tag: #{$booking-tag};
+  --booking-text: #{$booking-text};
+  --booking-text-dark: #{$booking-text-dark};
+  --booking-text-hover: #{$booking-text-hover};
+  --booking-border: #{$booking-border};
+  --booking-border-dark: #{$booking-border-dark};
+  --booking-select-date: #{$booking-select-date};
+  --booking-svg: #{$booking-svg};
+  --booking-box: #{$booking-box};
+  --booking-control: #{$booking-control};
+  --special-price: #{$special-price};
+  --killer-price: #{$killer-price};
+}

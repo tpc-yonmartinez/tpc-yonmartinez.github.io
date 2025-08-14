@@ -1,0 +1,375 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+body {
+  color: $color-base;
+  background: $page-bg;
+  font-kerning: none;
+  font-family: $font-secondary;
+  font-weight: $font-weight-base;
+  line-height: 1.3;
+  font-variant-numeric: lining-nums; // TPC
+  font-feature-settings: "lnum"; // TPC
+  * {
+    scrollbar-width: none;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &:has(header.open-nav-side, header~.header--additionals > .header-nav-dropdown-menu, .modal, .loading_submit) {
+    overflow: hidden;
+  }
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3 {
+    font-family: $font-primary;
+    color: $title-principal;
+  }
+  .hero .hero-slide {
+    h2,
+    .h2,
+    p {
+      color: $white;
+    }
+  }
+}
+h1,
+.h1 {
+  font-size: $font-size-title-mobile;
+  @media screen and (min-width: $md) {
+    font-size: $font-size-title-table;
+  }
+  @media screen and (min-width: $xl) {
+    font-size: $font-size-title-desktop;
+  }
+  &.small {
+    font-size: $font-size-title-small;
+    @media screen and (min-width: $xxl) {
+      font-size: $font-size-title-mobile;
+    }
+  }
+}
+h2,
+.h2 {
+  font-size: $font-size-title-small;
+  @media screen and (min-width: $xl) {
+    font-size: $font-size-title-mobile;
+  }
+  &.medium {
+    font-size: $font-size-lm;
+    @media screen and (min-width: $md) {
+      font-size: $font-size-s;
+    }
+    @media screen and (min-width: $xxl) {
+      font-size: $font-size-title-medium;
+    }
+  }
+  &.small {
+    font-size: $font-size-l;
+    @media screen and (min-width: $md) {
+      font-size: $font-size-s;
+    }
+    @media screen and (min-width: $xxl) {
+      font-size: $font-size-l;
+    }
+  }
+}
+h3,
+.h3 {
+  font-size: $font-size-l;
+  // font-family: $font-third !important; // LULU
+}
+p {
+  font-size: $font-size-xs;
+  letter-spacing: 0.16px;
+  font-family: $font-secondary !important; // LULU
+  &.description {
+    font-size: $font-size-body;
+    &-capital {
+      font-size: $font-size-body;
+      @media screen and (min-width: $xl) {
+        letter-spacing: 0.24px;
+      }
+    }
+  }
+}
+label {
+  font-size: $font-size-xs;
+  letter-spacing: 0.16px;
+  // font-family: $font-secondary !important; // LULU
+  &.strong,
+  &.strong-capital,
+  &.strong-big {
+    font-weight: $font-weight-bold;
+    // font-family: $font-secondary !important; // LULU
+  }
+  &.form-active {
+    font-size: $font-size-body-small;
+    @media screen and (min-width: $md) {
+      font-size: $font-size-xxs;
+    }
+  }
+  // &.title-capital { // LULU
+  //   font-family: $font-third !important;
+  //   &-h3 {
+  //     font-family: $font-third !important;
+  //     font-size: $font-size-l;
+  //   }
+  // }
+  &[for] {
+    cursor: pointer;
+  }
+}
+.note {
+  font-size: $font-size-body-small;
+  // font-family: $font-secondary !important; // LULU
+  @media screen and (min-width: $md) {
+    font-size: $font-size-xxs;
+  }
+  &-xxs {
+    font-size: $font-size-xxxs;
+  }
+  &.capital {
+    font-size: $font-size-body-small;
+    @media screen and (min-width: $md) {
+      font-size: $font-size-xxs;
+      letter-spacing: 0.12px;
+    }
+  }
+}
+.body {
+  font-size: $font-size-s;
+  &-small {
+    font-size: $font-size-xs;
+    line-height: 18.2px;
+  }
+  &-medium {
+    font-size: $font-size-l;
+    // font-family: $font-third; // LULU
+    &-bold {
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+.disabled {
+  opacity: 0.75;
+  pointer-events: none;
+}
+form {
+  &[class*="hs-form"] {
+    label {
+      text-transform: none;
+    }
+  }
+}
+header {
+  &:has(~ main > .page.no-hero) {
+    border-bottom: 1px solid $header-border;
+    :deep() {
+      color: $color-base;
+      .button {
+        .icon-container {
+          svg {
+            path {
+              fill: $color-base !important;
+              stroke: $color-base !important;
+            }
+          }
+        }
+        label {
+          color: $color-base;
+        }
+      }
+      .button-primary {
+        .icon-container {
+          svg {
+            path {
+              @media screen and (min-width: $md) {
+                fill: $white !important;
+                stroke: $white !important;
+              }
+            }
+          }
+        }
+        label {
+          color: $white;
+        }
+      }
+      .icon-container {
+        svg {
+          path {
+            &:is(.fill) {
+              fill: $color-base;
+            }
+            &:is(.stroke) {
+              stroke: $color-base;
+            }
+          }
+          rect {
+            stroke: $color-base;
+          }
+        }
+      }
+      .lang__selected {
+        color: $color-base;
+      }
+      .icon-container.open ~ .lang__selected{
+        color: invert($color: $black);
+      }
+    }
+  }
+  &:not(.header-nav-fixed) {
+    &:has(~ main > .page > .hero) {
+      position: absolute;
+    }
+  }
+  &:has(~ .header--additionals > .header--dropdown.open) {
+    border-bottom: 1px solid $header-border;
+    & ~ main {
+      .page {
+        .booking {
+          z-index: 1;
+          opacity: 0;
+        }
+      }
+    }
+    :deep() {
+      color: $color-base;
+      .button {
+        .icon-container {
+          svg {
+            path {
+              fill: $color-base !important;
+              stroke: $color-base !important;
+            }
+          }
+        }
+        label {
+          color: $color-base;
+        }
+      }
+      .button-primary {
+        .icon-container {
+          svg {
+            path {
+              @media screen and (min-width: $md) {
+                fill: $white !important;
+                stroke: $white !important;
+              }
+            }
+          }
+        }
+        label {
+          color: $white;
+        }
+      }
+      .icon-container {
+        svg {
+          path {
+            &:is(.fill) {
+              fill: $color-base;
+            }
+            &:is(.stroke) {
+              stroke: $color-base;
+            }
+          }
+          rect {
+            stroke: $color-base;
+          }
+        }
+      }
+      .lang__selected {
+        color: $color-base;
+      }
+      .icon-container.open ~ .lang__selected{
+        color: invert($color: $black);
+      }
+    }
+  }
+  &:has(~ .error) {
+    border-bottom: 1px solid $header-border;
+    .header-nav__container__top {
+      :deep(.logo) {
+        .logo-white {
+          opacity: 0;
+          visibility: hidden;
+        }
+        .logo-gray-strong {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    :deep() {
+      color: $color-base;
+      .button {
+        .icon-container {
+          svg {
+            path {
+              fill: $color-base !important;
+              stroke: $color-base !important;
+            }
+          }
+        }
+        label {
+          color: $color-base;
+        }
+      }
+      .button-primary {
+        .icon-container {
+          svg {
+            path {
+              fill: $white !important;
+              stroke: $white !important;
+            }
+          }
+        }
+        label {
+          color: $white;
+        }
+      }
+      .icon-container {
+        svg {
+          path {
+            &:is(.fill) {
+              fill: $color-base;
+            }
+            &:is(.stroke) {
+              stroke: $color-base;
+            }
+          }
+          rect {
+            stroke: $color-base;
+          }
+        }
+      }
+      .lang__selected {
+        color: $color-base !important;
+      }
+      .icon-container.open ~ .lang__selected{
+        color: invert($color: $black) !important;
+      }
+    }
+  }
+}
+.informative-message:has(~ main > .page > .hero) + header {
+  top: unset !important;
+}
+body, main {
+  &:has([data-theme='dark']) {
+    background: $black;
+    h1, h2, h3 {
+      color: $white;
+    }
+  }
+}
