@@ -27,7 +27,7 @@
     props: {
       backgroundImage: {
         type: String,
-        default: "assets/img/hero/hero-home.png"
+        default: "assets/img/Hero/hero-home.png"
       }
     }
   };
