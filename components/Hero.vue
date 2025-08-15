@@ -170,10 +170,6 @@ onBeforeUnmount(() => {
   }
 }
 .hero {
-  // margin: 0 calc($padding-container-s * -1);
-  // @media screen and (min-width: $sm) {
-  //   margin: 0 calc($padding-container-m * -1);
-  // }
   :deep(.splide) {
     height: 100%;
     .splide__arrows {
