@@ -25,7 +25,7 @@ onUnmounted(() => {
         <p>{{ message }} was loaded.</p>
       </template>
     </NuxtRouteAnnouncer>
-    <Header phone="800-262-0008" :options="[{ title: 'About Us', link: '/about' }, { title: 'Our Destinations', link: '/destination' }, { title: 'Contact', link: '/contact' }, { title: 'Legal', link: '/legal' }]" />
+    <nav-side phone="800-262-0000" :options="[{ title: 'About Us', link: '/about' }, { title: 'Our Destinations', link: '/destination' }, { title: 'Contact', link: '/contact' }, { title: 'Legal', link: '/legal' }]" />
     <NuxtPage />
     <Footer />
   </div>

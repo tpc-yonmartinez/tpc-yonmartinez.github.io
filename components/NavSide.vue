@@ -12,12 +12,12 @@ withDefaults(defineProps<HeaderProps>(), {
 
 <template>
   <header class="absolute top-0 left-0 right-0 z-[1] px-[20px] md:px-[10vw] 2xl:px-[192px] py-[20px] md:pb-0 max-h-[138px] flex flex-col md:gap-[20px] border-b-[#f7f6f14d] border-b-[1px] text-white">
-    <div class="flex flex-row justify-between items-center">
+    <div class="flex flex-row justify-between items-center [&_.icon-container_svg_path:is(.fill)]:fill-[--btn-text-dark] [&_.icon-container_svg_rect:is(.fill)]:fill-[--btn-text-dark]">
       <a href="/">
         <Icon variant="prglobal-large" class="h-[40px] w-[165px] md:h-[70px] md:w-[290px]" />
       </a>
       <div class="flex flex-row gap-[20px] md:gap-[30px] items-center">
-        <div class="hidden md:flex">
+        <div class="hidden md:flex body-small">
           EN | ES
         </div>
         <div class="flex flex-row gap-[10px] items-center">
