@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   i18n: {
     defaultLocale: 'en',
     langDir: 'lang',
-    baseUrl: '/docs/',
+    baseUrl: '/tpc-yonmartinez.github.io/',
     locales: [{
       code: 'en',
       iso: 'en-US',
