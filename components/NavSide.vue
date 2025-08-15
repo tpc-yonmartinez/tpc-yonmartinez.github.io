@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <nav class="hidden md:flex flex-row gap-[40px]">
+    <nav class="hidden md:flex flex-row gap-[40px] mb-[9px]">
       <NuxtLink v-for="(option, index) in options" :key="index" :to="option.link" :target="option.target" class="body-small cursor-pointer" > {{ option.title }} </NuxtLink>
     </nav>
     <Transition name="menu-fade" mode="out-in">
