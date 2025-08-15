@@ -36,7 +36,7 @@ const filtercards = computed(() => {
       'flex-col justify-center items-center': stylecomponent === 'Default',
       'bg-[--white-alternative]': enablebg && ['Colum', 'Default', 'List'].includes(stylecomponent),
     },
-    `flex ${['List'].includes(stylecomponent) ? 'flex-col md:!gap-[40px] lg:justify-center lg:!gap-[60px]' : ''} gap-[40px] py-[50px] px-[20px] -mx-[20px] md:gap-[60px] md:-mx-[10vw] md:py-[60px] lg:gap-[100px] lg:py-[100px] xl:px-0`,
+    `flex ${['List'].includes(stylecomponent) ? 'flex-col md:!gap-[40px] lg:justify-center lg:!gap-[60px]' : ''} gap-[40px] py-[50px] px-[20px] md:gap-[60px] md:py-[60px] lg:gap-[100px] lg:py-[100px] xl:px-0`,
   ]">
     <div v-for="(item, i) in filtercards"
     :key="i"
