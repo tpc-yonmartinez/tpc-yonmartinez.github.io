@@ -3,12 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
   app: {
-    baseURL: '/tpc-yonmartinez.github.io/',
-    head: {
-      script: [
-        { src: '//js.hsforms.net/forms/v2.js', type: 'text/javascript', defer: true }
-      ]
-    }
+    baseURL: '/tpc-yonmartinez.github.io/docs/'
   },
 
   modules: [
@@ -26,7 +21,7 @@ export default defineNuxtConfig({
   i18n: {
     defaultLocale: 'en',
     langDir: 'lang',
-    baseUrl: '/tpc-yonmartinez.github.io/',
+    baseUrl: '/tpc-yonmartinez.github.io/docs/',
     locales: [{
       code: 'en',
       iso: 'en-US',
