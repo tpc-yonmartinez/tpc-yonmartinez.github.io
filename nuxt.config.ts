@@ -3,14 +3,14 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
   app: {
-    baseURL: '/tpc-yonmartinez.github.io/docs/'
+    baseURL: '/tpc-yonmartinez.github.io/'
   },
 
   modules: [
     '@nuxtjs/i18n',
   ],
 
-  ssr: true,
+  ssr: false,
   nitro: {
     preset: 'static',
     output: {
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   i18n: {
     defaultLocale: 'en',
     langDir: 'lang',
-    baseUrl: '/tpc-yonmartinez.github.io/docs/',
+    baseUrl: '/tpc-yonmartinez.github.io/',
     locales: [{
       code: 'en',
       iso: 'en-US',
