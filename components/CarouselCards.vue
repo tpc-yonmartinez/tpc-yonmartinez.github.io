@@ -97,27 +97,29 @@ const splideOptions = {
         <p class="description-capital text-center">{{ description }}</p>
       </div>
     </div>
-    <Splide :class="['carousel-cards__slide', `carousel-cards__slide-${imageaspec}`, cards?.length > 3 ? '' : 'center_content flex justify-center']"
-            :options="splideOptions" :extensions="autoscroll && cards?.length > 3 ? extensions : {}">
-      <SplideSlide v-for="(card, index) in cards" :key="index">
-        <CardCarouselCards :modal="card.modal"
-                           :urlinternal="card.urlinternal"
-                           :urlExternal="card.urlExternal"
-                           :title="card.title"
-                           :playvideo="MediaQuery ? card.playvideo : true"
-                           :tag="card.tag"
-                           :media="card.media ? card.media : null"
-                           :description="card.description"
-                           :date="card.date"
-                           :imageaspec="imageaspec || 'default'"
-                           :btnltext="card.btnltext"
-                           :btnrtext="card.btnrtext"
-                           :btnrinternal="card.btnrinternal"
-                           :btnrexternal="card.btnrexternal"
-                           :btnrmodal="card.btnrmodal"
-                           :disclaimer="card.disclaimer" />
-      </SplideSlide>
-    </Splide>
+    <ClientOnly>
+      <Splide :class="['carousel-cards__slide', `carousel-cards__slide-${imageaspec}`, cards?.length > 3 ? '' : 'center_content flex justify-center']"
+              :options="splideOptions" :extensions="autoscroll && cards?.length > 3 ? extensions : {}">
+        <SplideSlide v-for="(card, index) in cards" :key="index">
+          <CardCarouselCards :modal="card.modal"
+                             :urlinternal="card.urlinternal"
+                             :urlExternal="card.urlExternal"
+                             :title="card.title"
+                             :playvideo="MediaQuery ? card.playvideo : true"
+                             :tag="card.tag"
+                             :media="card.media ? card.media : null"
+                             :description="card.description"
+                             :date="card.date"
+                             :imageaspec="imageaspec || 'default'"
+                             :btnltext="card.btnltext"
+                             :btnrtext="card.btnrtext"
+                             :btnrinternal="card.btnrinternal"
+                             :btnrexternal="card.btnrexternal"
+                             :btnrmodal="card.btnrmodal"
+                             :disclaimer="card.disclaimer" />
+        </SplideSlide>
+      </Splide>
+    </ClientOnly>
     <div v-if="btnText" class="flex justify-center px-[20px] md:px-0">
       <Button class="max-md:w-full"
               variant="secondary"

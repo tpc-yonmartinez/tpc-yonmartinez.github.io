@@ -72,15 +72,17 @@ const splideOptions = {
       </div>
     </div>
     <div class="carousel-badges__cards md:flex md:items-center md:justify-center" v-if="cards && cards?.length > 0">
-      <Splide :options="splideOptions">
-        <SplideSlide :class="['carousel-badges__slide', {'rounded-full': roundedStyle }]" v-for="(item, index) in cards" :key="index">
-          <NuxtLink :to="item.urlexternal"
-                    target="_blank"
-                    class="h-full w-full flex justify-center items-center">
-            <ImageStrapi :image="item.media" />
-          </NuxtLink>
-        </SplideSlide>
-      </Splide>
+      <ClientOnly>
+        <Splide :options="splideOptions">
+          <SplideSlide :class="['carousel-badges__slide', {'rounded-full': roundedStyle }]" v-for="(item, index) in cards" :key="index">
+            <NuxtLink :to="item.urlexternal"
+                      target="_blank"
+                      class="h-full w-full flex justify-center items-center">
+              <ImageStrapi :image="item.media" />
+            </NuxtLink>
+          </SplideSlide>
+        </Splide>
+      </ClientOnly>
     </div>
   </div>
 </template>

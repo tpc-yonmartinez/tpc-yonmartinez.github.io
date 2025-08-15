@@ -137,10 +137,10 @@ const props = defineProps({
 // }
 
 const mouseHover = () => {
-  isDesktop.value && !props.playvideo && (hover.value = true)
+  //isDesktop.value && !props.playvideo && (hover.value = true)
 }
 const mouseRemoveHover = () => {
-  isDesktop.value && !props.playvideo && (hover.value = false)
+  //isDesktop.value && !props.playvideo && (hover.value = false)
 }
 </script>
 

@@ -107,19 +107,21 @@ onUnmounted(() => {
     </div>
   </div>
   <div class="carousel-center__sliders">
-    <Splide ref="splideCenter" :options="splideOptions" class="carousel-center__sliders__carousel">
-      <SplideSlide v-for="(card, index) in cards" :key="index" class="carousel-center__sliders__item">
-        <CardCarouselCenter :title= "card.title"
-                            :description= "card.description"
-                            :btnText= "card.btnText"
-                            :backgroundcolor= "bgColor"
-                            :tag= "card.tag"
-                            :urlinternal= "card.urlinternal"
-                            :urlExternal= "card.urlExternal"
-                            :modal= "card.modal"
-                            :media="card?.media"/>
-      </SplideSlide>
-    </Splide>
+    <ClientOnly>
+      <Splide ref="splideCenter" :options="splideOptions" class="carousel-center__sliders__carousel">
+        <SplideSlide v-for="(card, index) in cards" :key="index" class="carousel-center__sliders__item">
+          <CardCarouselCenter :title= "card.title"
+                              :description= "card.description"
+                              :btnText= "card.btnText"
+                              :backgroundcolor= "bgColor"
+                              :tag= "card.tag"
+                              :urlinternal= "card.urlinternal"
+                              :urlExternal= "card.urlExternal"
+                              :modal= "card.modal"
+                              :media="card?.media"/>
+        </SplideSlide>
+      </Splide>
+    </ClientOnly>
   </div>
 </div>
 </template>

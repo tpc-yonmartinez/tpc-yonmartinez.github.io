@@ -16,7 +16,6 @@ export default defineNuxtConfig({
   ],
 
   ssr: true,
-  target: 'static',
   nitro: {
     preset: 'static',
     output: {
@@ -26,11 +25,8 @@ export default defineNuxtConfig({
 
   i18n: {
     defaultLocale: 'en',
-    lazy: true,
-    seo: false,
-    legacy: false,
     langDir: 'lang',
-    baseUrl: 'https://www.thepalacecompany.com/',
+    baseUrl: '/docs/',
     locales: [{
       code: 'en',
       iso: 'en-US',
