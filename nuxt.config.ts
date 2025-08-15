@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
   app: {
-    baseURL: '/'
+    baseURL: process.env.NUXT_BASE_URL || '/',
   },
 
   modules: [
