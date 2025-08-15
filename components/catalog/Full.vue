@@ -89,7 +89,6 @@ const splideOptions = {
   mediaQuery: 'min',
   type: 'slide',
   lazyLoad: 'nearby',
-  arrows: false,
   preloadPages: 1,
   perPage: 1,
   focus: 'center',
