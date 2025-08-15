@@ -37,12 +37,12 @@ const data = {
     "countries": null
   },
   contentIntro: {
-    "title": "What We Do",
-    "description": "We create journeys. Not transactions.\n\nAs a tour operator, PR Global goes beyond reservations to build immersive, end-to-end travel packages with unmatched coordination and personalization.",
+    "title": "Destinations and Resorts",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a ipsum id nisi vehicula pellentesque auctor sed neque. Phasellus interdum ante id aliquam ultricies. Aenean ultrices neque nibh, quis mattis turpis condimentum quis. Pellentesque venenatis vulputate auctor. Duis cursus quis leo vel posuere.",
     "decorativeLine": true,
     "tagH": "h2",
-    "btnltext": null,
-    "btnlexternal": null,
+    "btnltext": "Book Now",
+    "btnlexternal": "https://www.thepalacecompany.com/",
     "btnrtext": null,
     "btnrexternal": null,
     "removepaddingbottom": false,
@@ -316,9 +316,9 @@ const data = {
 
 <template>
   <div>
-    <!--<hero v-bind="data.hero" />
+    <hero v-bind="data.hero" />
     <content-intro v-bind="data.contentIntro" />
-    <catalog v-bind="data.catalog" />
-    <carousel-center v-bind="data.carouselCenter" />-->
+    <!-- <catalog v-bind="data.catalog" /> -->
+    <carousel-center v-bind="data.carouselCenter" />
   </div>
 </template>
