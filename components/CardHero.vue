@@ -97,7 +97,7 @@ const heroSlideTextCSS = computed(() => ({
   'hidden' : props.size == 'min'
 }))
 const heroSlideMediaCSS = computed(() => ({
-  'hero-slide__media absolute top-0 left-0 w-full z-[-1] h-[100%]': true
+  'hero-slide__media absolute top-0 left-0 w-full z-[0] h-[100%]': true
 }))
 const timerContainerCSS = computed(() => ({
   'hero-slide__timer absolute left-[50%] translate-x-[-50%] bottom-[10%] lg:bottom-[15%]': true

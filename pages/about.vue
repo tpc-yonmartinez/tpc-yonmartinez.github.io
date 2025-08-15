@@ -22,7 +22,7 @@ const data = {
         "media": {
           "id": 728,
           "name": "about.png",
-          "url": "assets/img/hero/hero-about.png",
+          "url": "assets/img/Hero/hero-about.png",
           "caption": null,
           "alternativeText": null,
           "imageformats": null,
