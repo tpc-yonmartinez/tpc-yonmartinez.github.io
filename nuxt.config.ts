@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
   ],
 
-  ssr: false,
+  ssr: true,
   nitro: {
     preset: 'static',
     output: {
