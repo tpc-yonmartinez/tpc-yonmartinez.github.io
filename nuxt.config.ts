@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
   app: {
-    baseURL: '/tpc-yonmartinez.github.io/'
+    baseURL: '/'
   },
 
   modules: [
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   i18n: {
     defaultLocale: 'en',
     langDir: 'lang',
-    baseUrl: '/tpc-yonmartinez.github.io/',
+    baseUrl: 'https://www.thepalacecompany.com/',
     locales: [{
       code: 'en',
       iso: 'en-US',
