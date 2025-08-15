@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
   app: {
-    // baseURL: '/tpc-yonmartinez.github.io/'
+    baseURL: '/tpc-yonmartinez.github.io/'
   },
 
   modules: [
