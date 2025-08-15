@@ -23,7 +23,7 @@ body {
   &::-webkit-scrollbar {
     display: none;
   }
-  &:has(header.open-nav-side, header~.header--additionals > .header-nav-dropdown-menu, .modal, .loading_submit) {
+  &:has(header.open-nav-side, header~.header--additionals > .header-nav-dropdown-menu, .modal, .loading_submit, .open-menu) {
     overflow: hidden;
   }
   h1,
