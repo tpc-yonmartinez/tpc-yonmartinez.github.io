@@ -4,6 +4,7 @@ import { Splide, SplideSlide } from '@splidejs/vue-splide'
 import '@splidejs/vue-splide/css'
 
 // const Fade = defineAsyncComponent(() => import('./animations/Fade.client.vue'))
+const Button = defineAsyncComponent(() => import('./Button.vue'))
 const ImageStrapi = defineAsyncComponent(() => import('./ImageStrapi.vue'))
 
 const props = defineProps({
@@ -30,7 +31,11 @@ const props = defineProps({
   roundedStyle: {
     type: Boolean,
     default: false
-  }
+  },
+  btnText: {
+    type: String,
+    default: ''
+  },
 })
 
 const splideOptions = {
@@ -82,8 +87,15 @@ const splideOptions = {
             </NuxtLink>
           </SplideSlide>
         </Splide>
-      </ClientOnly>
+      </ClientOnly>      
     </div>
+    <div v-if="btnText" class="flex justify-center px-[20px] md:px-0">
+          <Button class="max-md:w-full"
+                variant="secondary"
+                :buttonInternalLink="btninternal"
+                :buttonExternalLink="btnExternal"
+                :buttonModal="btnmodal">{{ btnText }}</Button>
+      </div>
   </div>
 </template>
 

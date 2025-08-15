@@ -21,12 +21,12 @@ const data = {
         "idcard": null,
         "media": {
           "id": 728,
-          "name": "the-palace-ompany.mp4",
-          "url": "https://www.thepalacecompany.com/the_palace_ompany_b0de6c1efa.mp4",
+          "name": "about.png",
+          "url": "assets/img/hero/hero-about.png",
           "caption": null,
           "alternativeText": null,
           "imageformats": null,
-          "mime": "video/mp4",
+          "mime": "image/png",
           "isUrlSigned": false
         },
         "mediam": null,
@@ -322,8 +322,8 @@ const data = {
 <template>
   <div>
     <hero v-bind="data.hero" />
-    <content-intro v-bind="data.contentIntro" />
     <content-center v-bind="data.contentCenter" />
+    <content-intro v-bind="data.contentIntro" />
     <content-intro v-bind="data.contentIntro2" />
     <content-colum v-bind="data.contentColum" />
     <content-align v-bind="data.contentAlign" />

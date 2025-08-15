@@ -27,7 +27,7 @@
     props: {
       backgroundImage: {
         type: String,
-        default: "assets/img/Hero/baglioni.jpg"
+        default: "assets/img/hero/hero-home.png"
       }
     }
   };
