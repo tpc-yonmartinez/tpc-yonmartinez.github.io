@@ -44,7 +44,7 @@ const props = defineProps({
 <template>
 <div class="content-center h-auto py-[50px] md:py-[60px] xl:py-[5vw] 2xl:py-[100px] flex flex-col gap-[40px] lg:gap-[60px]">
   <div :class="[{'order-2': investcontent}, 'scrollme']">
-    <div :class="['md:max-w-[80vw]', {'animateme': !investcontent}]" data-when="enter" data-from="0.9" data-to="0" data-scalex="1.3" data-scaley="1.2">
+    <div :class="[{'animateme': !investcontent}]" data-when="enter" data-from="0.9" data-to="0" data-scalex="1.3" data-scaley="1.2">
       <ImageStrapi v-if="media?.mime?.includes('image')" :image="media" fit :class="['content-center__image', {'scale_init': !investcontent}]" />
       <div v-else class="content-center__image video scale_init">
         <VideoStrapi :video="media" />
