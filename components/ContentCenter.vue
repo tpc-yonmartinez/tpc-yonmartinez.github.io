@@ -128,7 +128,7 @@ const props = defineProps({
 }
 .scale_init {
   @media screen and (min-width: $md){
-    transform: scale(1.3, 1.2);
+    transform: scale(1.2, 1.1);
   }
 }
 </style>

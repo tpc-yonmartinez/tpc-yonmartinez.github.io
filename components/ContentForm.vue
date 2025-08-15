@@ -44,10 +44,10 @@ const props = defineProps({
 
 <style scoped lang="scss">
 .content-form {
-  margin: 0 calc($padding-container-s * -1);
-  @media screen and (min-width: $md) {
-    margin: 0 calc($padding-container-m * -1);
-  }
+  // margin: 0 calc($padding-container-s * -1);
+  // @media screen and (min-width: $md) {
+  //   margin: 0 calc($padding-container-m * -1);
+  // }
   &__image {
     width: 100%;
     height: 100%;

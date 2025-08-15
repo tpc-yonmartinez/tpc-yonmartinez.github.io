@@ -26,7 +26,7 @@ const props = defineProps({
 
 <template>
   <div :class="['content-info flex flex-col items-start gap-[40px] lg:gap-[60px] py-[50px] md:py-[60px] xl:py-[5vw] 2xl:py-[100px]',
-               {'bg-[--component-bg-alt] -mx-[20px] px-[20px] md:-mx-[10vw] md:px-[10vw]': bgColor}]">
+               {'bg-[--component-bg-alt] px-[20px] md:px-[10vw]': bgColor}]">
     <div v-if="title" class="content-info__content flex flex-col gap-[30px] md:w-full md:gap-[40px] xl:w-[50vw] xl:m-auto">
       <div>
         <h2 class="text-center"> {{ title }} </h2>
