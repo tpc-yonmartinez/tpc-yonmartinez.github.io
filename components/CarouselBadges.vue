@@ -62,7 +62,7 @@ const splideOptions = {
 </script>
 
 <template>
-  <div class="carousel-badges flex flex-col gap-[30px] md:gap-[40px] xl:gap-[60px] text-center overflow-hidden w-auto -mx-[20px] md:-mx-[10vw] py-[50px] md:py-[60px] xl:py-[5vw] 2xl:py-[100px]">
+  <div class="carousel-badges flex flex-col gap-[30px] md:gap-[40px] xl:gap-[60px] text-center overflow-hidden w-auto py-[50px] md:py-[60px] xl:py-[5vw] 2xl:py-[100px]">
     <div v-if="title || description" class="carousel-badges__content flex gap-[30px] flex-col px-[20px] md:px-[100px] md:gap-[40px] xl:w-[50vw] xl:px-0 xl:mx-auto">
       <div v-if="title">
         <component :is="htag"> {{ title }} </component>
