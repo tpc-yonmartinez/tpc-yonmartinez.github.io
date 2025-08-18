@@ -26,7 +26,7 @@ const data = {
           "media": {
             "id": 728,
             "name": "index.png",
-            "url": "assets/img/Hero/index.png",
+            "url": "assets/img/heroes/index.png",
             "caption": null,
             "alternativeText": null,
             "imageformats": null,
@@ -783,7 +783,7 @@ const data = {
           "media": {
             "id": 728,
             "name": "index.png",
-            "url": "assets/img/Hero/index.png",
+            "url": "assets/img/heroes/index.png",
             "caption": null,
             "alternativeText": null,
             "imageformats": null,
@@ -1522,7 +1522,7 @@ const data = {
 
 <template>
   <div>
-    <hero2 v-bind="data[locale].hero" />
+    <hero v-bind="data[locale].hero" />
     <carousel-badges v-bind="data[locale].carouselBadges" />
     <content-intro v-bind="data[locale].contentIntro" />
     <content-group v-bind="data[locale].contentGroup" />
