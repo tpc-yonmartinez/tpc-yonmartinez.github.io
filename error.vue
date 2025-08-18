@@ -5,7 +5,12 @@ import useParseText from '@/composables/useParseText'
 import { LazyTitle } from '#components'
 
 const props = defineProps({
-  error: Object as () => NuxtError
+  error: Object as () => NuxtError,
+  text404: {
+    type: String,
+    default: ''
+  },
+
 })
 
 const { locale, t } = useI18n(),
@@ -43,35 +48,6 @@ nuxtApp.hook('page:finish', () => {
 const titleFormatted = (text) => (useParseText(text))?.replace(/\*{1,2}(.*?)\*{1,2}/g, '<strong>$1</strong>')
 </script>
 
-<!-- <template>
-  <div class="error-page">
-    <div v-if="error?.statusCode === 404">
-      <h1>Error 404</h1>
-      <p>Lo sentimos, la página que buscas no existe.</p>
-      <NuxtLink to="/">Volver al inicio</NuxtLink>
-    </div>
-    <div v-else>
-      <h1>Error {{ error?.statusCode }}</h1>
-      <p>{{ error?.statusMessage || 'Ocurrió un error inesperado.' }}</p>
-      <NuxtLink to="/">Volver al inicio</NuxtLink>
-    </div>
-  </div>
-</template>
-
-<style scoped>
-.error-page {
-  text-align: center;
-  margin-top: 50px;
-}
-.error-page h1 {
-  font-size: 3rem;
-  color: #ff6b6b;
-}
-.error-page p {
-  font-size: 1.5rem;
-  margin: 20px 0;
-}
-</style> -->
 <template>
     <div class="app">
       <Transition name="page-palace">
@@ -86,8 +62,8 @@ const titleFormatted = (text) => (useParseText(text))?.replace(/\*{1,2}(.*?)\*{1
           <div class="error_content flex flex-col gap-[30px] px-[20px] pt-[40px] md:flex-[1_0_0] md:self-stretch  md:gap-[20px] md:p-[0] xl:justify-center xl:gap-[40px]">
             <LazyTitleLine/>
             <LazyBodyText wrapper="h2" class="error_content__message" :html="titleFormatted('Oops!')" />
-            <LazyBodyText wrapper="h2" class="error_content__message" :html="titleFormatted(errorPage?.text404 || `${error.statusCode}`)" />
-            <LazyBodyText wrapper="p" class="error_content__description lg:!text-[20px]" :html=" useParseText(errorPage?.description404) || error.statusMessage || t('error.description.404')" v-if="error.statusCode >= 400 && error.statusCode <= 500" />
+            <LazyBodyText wrapper="h2" class="error_content__message" :html="titleFormatted(props?.text404 || `${error.statusCode}`)" />
+            <LazyBodyText wrapper="p" class="error_content__description lg:!text-[20px]" :html=" error.statusMessage || t('error.description.404')" v-if="error.statusCode >= 400 && error.statusCode <= 500" />
             <LazyBodyText wrapper="p" class="error_content__description lg:!text-[20px]" :html=" error.statusMessage || t('error.description.500')" v-else />
             <div class="error-page">
                 <div v-if="error?.statusCode === 404">

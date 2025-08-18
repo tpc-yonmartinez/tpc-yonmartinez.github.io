@@ -26,7 +26,7 @@ const data = {
           "media": {
             "id": 728,
             "name": "index.png",
-            "url": "assets/img/heroes/index.png",
+            "url": "assets/img/heroes/hero-home.png",
             "caption": null,
             "alternativeText": null,
             "imageformats": null,
