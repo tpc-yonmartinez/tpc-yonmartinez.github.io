@@ -224,24 +224,6 @@ onUnmounted(() => {
             path {
               fill: $arrow;
             }
-            &--next {
-              right: 3vw;
-              @media screen and (min-width: $lg) {
-                right: calc(3vw + 64px);
-              }
-              @media screen and (min-width: $xxl) {
-                right: 3vw;
-              }
-            }
-            &--prev {
-              left: 3vw;
-              @media screen and (min-width: $lg) {
-                left: calc(3vw + 64px);
-              }
-              @media screen and (min-width: $xxl) {
-                left: 3vw;
-              }
-            }
           }
         }
         .splide__track {
