@@ -9,7 +9,7 @@
 
   export interface HeaderProps {
     phone?: string;
-    options?: Array<{ title: string; link: string, target?: string | '_self' }>;
+    options?: Array<{ title: string; link: string, localizations: string, target?: string | '_self' }>;
   }
 
   const props = withDefaults(defineProps<HeaderProps>(), {
@@ -22,10 +22,14 @@
   const changeLocale = (lang) => {
     if (lang === locale.value) return
 
-    const path = route.path.replace(/^\/(es|fr)/, '')
+    let path = route.path.replace(/^\/(es|fr)/, '')
+
+    if (path !== '/' && path.endsWith('/')) {
+      path = path.replace(/\/$/, '')
+    }
+
     const localizations = props.options.filter(m => m.link === path)[0]?.localizations || ''
     openNav.value = false
-    console.log(`Localization for ${lang}: ${localizations}`)
 
     navigateTo(`${defaultLocale !== lang ? '/' + lang : ''}${localizations ? '/' + localizations : ''}`, { replace: true })
   }
@@ -51,8 +55,8 @@
 
 <template>
   <header class="absolute top-0 left-0 right-0 z-[1] px-[20px] md:px-[10vw] 2xl:px-[192px] py-[20px] md:pb-0 max-h-[138px] flex flex-col md:gap-[20px] border-b-[#f7f6f14d] border-b-[1px] text-white" >
-    <div class="cursor-pointer flex flex-row justify-between items-center [&_.icon-container_svg_path:is(.fill)]:fill-[--btn-text-dark] [&_.icon-container_svg_rect:is(.fill)]:fill-[--btn-text-dark]" >
-      <NuxtLink :to="localePath('/')">
+    <div class="flex flex-row justify-between items-center [&_.icon-container_svg_path:is(.fill)]:fill-[--btn-text-dark] [&_.icon-container_svg_rect:is(.fill)]:fill-[--btn-text-dark]" >
+      <NuxtLink :to="localePath('/')" class="cursor-pointer">
         <Icon variant="prglobal-large" class="h-[40px] w-[165px] md:h-[70px] md:w-[290px]" />
       </NuxtLink>
       <div class="flex flex-row gap-[20px] md:gap-[30px] items-center" >

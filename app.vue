@@ -44,6 +44,6 @@ onUnmounted(() => {
     </NuxtRouteAnnouncer>
     <nav-side phone="800-262-0000" :options="menu[locale]" />
     <NuxtPage />
-    <Footer />
+    <Footer :options="menu[locale]" />
   </div>
 </template>
