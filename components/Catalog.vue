@@ -88,22 +88,17 @@ const filterByCategory = (category) => {
 }
 
 onMounted(() => {
-  console.log('Component mounted')
   sppiner.value = false
 })
 
 watch(() => filterBy.value, (newFilter) => {
   if (!newFilter) {
-    console.log('No filter applied')
     dataResponse.value = props.data
   } else {
-    sppiner.value = true
-    console.log(`Filtering by: `, newFilter)
     dataResponse.value = props.data.filter(item =>
       // Cambia 'nombre' por la propiedad que quieres filtrar
       item.categories?.find(category => category.includes(newFilter.category))
     )
-    sppiner.value = false
   }
 })
 </script>
