@@ -33,26 +33,20 @@ export default defineNuxtConfig({
   },
 
   i18n: {
+    locales: [
+      {code: 'en', iso: 'en-US', file: 'en.json', name: 'English'},
+      {code: 'es', iso: 'es-MX', file: 'es.json', name: 'Español'}
+    ],
     defaultLocale: 'en',
+    strategy: 'prefix_except_default',
     langDir: 'lang',
     baseUrl: 'https://www.thepalacecompany.com/',
-    locales: [{
-      code: 'en',
-      iso: 'en-US',
-      file: 'en.json',
-      name: 'English'
-    }, {
-      code: 'es',
-      iso: 'es-MX',
-      file: 'es.json',
-      name: 'Español'
-    }],
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
       alwaysRedirect: false,
       cookieCrossOrigin: true
-    }
+    },
   },
 
   vite: {

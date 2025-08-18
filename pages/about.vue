@@ -37,7 +37,7 @@ const data = {
     "countries": null
   },
   contentIntro: {
-    "title": "What We Do",
+    "title": "About Us",
     "description": "We create journeys. Not transactions.\n\nAs a tour operator, PR Global goes beyond reservations to build immersive, end-to-end travel packages with unmatched coordination and personalization.",
     "decorativeLine": true,
     "tagH": "h2",
