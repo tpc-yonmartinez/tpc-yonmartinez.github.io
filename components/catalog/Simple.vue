@@ -1,13 +1,9 @@
 <script setup>
 import { defineAsyncComponent } from 'vue'
-import { useNuxtApp } from '#app'
 import useParseText from '../../composables/useParseText'
 
-const BodyText = defineAsyncComponent(() => import("../BodyText.vue")) 
 const ImageStrapi = defineAsyncComponent(() => import('../ImageStrapi.vue'))
- 
-const { $goTo: goTo } = useNuxtApp()
- 
+  
 const props = defineProps({
   media: {
     type: Array,
@@ -48,8 +44,8 @@ const props = defineProps({
   <div :class="['catalog_content__card relative flex flex-col h-full',{'cursor-pointer' : modal || external || internal }]">
     <NuxtLink class="absolute h-full w-full z-[1]"
               v-if="!modal && (external || internal)"
-              :to="goTo(internal, external)"
-              :target="internal ? '_self' : '_blank'"
+              :to="external"
+              target="_blank"
               :aria-label="title" />
     <div class="catalog_content__card_media relative rounded-t-[--border-m] overflow-hidden w-full h-auto aspect-[5/6]">
       <ImageStrapi :image="media?.[0]" class="catalog_content__card_media_img h-full w-full" />
@@ -62,7 +58,7 @@ const props = defineProps({
         <label v-if="tag" class="capital text-[--color-base]"> {{ tag }} </label>
         <h3 v-if="title" class="!text-[--color-base]"> {{ title }} </h3>
       </div>
-      <BodyText v-if="description" wrapper="p" :html="useParseText(description)"></BodyText>
+      <p v-if="description" v-html="useParseText(description)"></p>
     </div>
   </div>
 </template>

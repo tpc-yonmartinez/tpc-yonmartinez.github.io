@@ -310,6 +310,170 @@ const data = {
     "countries": null,
     "btninternal": null,
     "btnmodal": null
+  },
+  catalog: {
+    stylecards: "Simple",
+    categories: [
+      { id: 1, category: "Italy" },
+      { id: 2, category: "Maldives" },
+      { id: 3, category: "Mexico" },
+      { id: 4, category: "Jamaica" }
+    ],
+    data: [
+      {
+        categories: ['Italy'],
+        tag: "Italy",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Casa Baglioni Milan'
+      },
+      {
+        categories: ['Italy'],
+        tag: "Italy",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Baglioni Hotel Luna Venice'
+      },
+      {
+        categories: ['Italy'],
+        tag: "Italy",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Baglioni Hotel Regina Rome'
+      },
+      {
+        categories: ['Italy'],
+        tag: "Italy",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Palazzo Firenze Florence'
+      },
+      {
+        categories: ['Italy'],
+        tag: "Italy",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Baglioni Resort Sardinia'
+      },
+      {
+        categories: ['Italy'],
+        tag: "Italy",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Baglioni Masseria Muzza Resort & Spa'
+      },
+      {
+        categories: ['Maldives'],
+        tag: "Maldives",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Baglioni Maldives Luxury All-Inclusive'
+      },
+      {
+        categories: ['Dominican Republic'],
+        tag: "Dominican Republic",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Moon Palace The Grand - Punta Cana'
+      },
+      {
+        categories: ['Mexico'],
+        tag: "Mexico",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Moon Palace The Grand - Cancun'
+      },
+      {
+        categories: ['Mexico'],
+        tag: "Mexico",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Moon Palace Cancun'
+      },
+      {
+        categories: ['Jamaica'],
+        tag: "Jamaican",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Moon Palace Jamaica'
+      },
+      {
+        categories: ['Mexico'],
+        tag: "Mexico",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Le Blanc Spa Resort Cancun'
+      },
+      {
+        categories: ['Mexico'],
+        tag: "Mexico",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Le Blanc Spa Resort Los Cabos'
+      },
+      {
+        categories: ['Mexico'],
+        tag: "Mexico",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Playacar Palace'
+      },
+      {
+        categories: ['Mexico'],
+        tag: "Mexico",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Beach Palace'
+      },
+      {
+        categories: ['Mexico'],
+        tag: "Mexico",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Sun Palace'
+      },
+      {
+        categories: ['Mexico'],
+        tag: "Mexico",
+        btntext: "Step Inside",
+        urlexternal: 'https://jamaica.moonpalace.com/restaurants/pier-8-seafood',
+        media: [{ url: 'https://www.moonpalace.com/pier-eight-restaurant-jamaica-moon-palace_20c5ada69d.webp'}],
+        servicedescription: 'Nunc tincidunt faucibus urna at blandit. Fusce rutrum, diam eu hendrerit tristique, tellus orci pretium lectus, non sollicitudin dui metus vel ligula.',
+        servicetitle: 'Cozumel Palace'
+      },
+    ]
   }
 }
 </script>
@@ -318,7 +482,7 @@ const data = {
   <div>
     <hero v-bind="data.hero" />
     <content-intro v-bind="data.contentIntro" />
-    <!-- <catalog v-bind="data.catalog" /> -->
+    <catalog v-bind="data.catalog" />
     <carousel-center v-bind="data.carouselCenter" />
   </div>
 </template>

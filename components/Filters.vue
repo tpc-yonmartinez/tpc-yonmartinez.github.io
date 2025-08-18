@@ -1,10 +1,8 @@
 <script setup>
 import { defineAsyncComponent, onMounted, ref, onUnmounted, onUpdated, nextTick, reactive, computed, watch } from 'vue'
-//import { Splide, SplideSlide } from '@splidejs/vue-splide'
-//import { useMediaQuery } from '@vueuse/core'
+import { Splide, SplideSlide } from '@splidejs/vue-splide'
 import '@splidejs/vue-splide/css'
 
-const BodyText = defineAsyncComponent(() => import('./BodyText.vue'))
 const Icon = defineAsyncComponent(() => import('./Icon.vue'))
 
 const emit = defineEmits(['onFilter', 'onSubfilter'])
@@ -74,13 +72,13 @@ const optionsSplideTwo = reactive({
 
 const onFilter = (category, index) => {
     current_category.value = category
-    splideOne.value.go(index)
+    splideOne.value?.go(index)
     emit('onFilter', category)
   }
 
 const onSubfilter = (category, index) => {
     current_subcategory.value = category
-    splideTwo.value.go(index)
+    splideTwo.value?.go(index)
     emit('onSubfilter', category)
   }
 
@@ -143,34 +141,38 @@ watch(() => props.refresh, (newValue) => { if (newValue) onFilter(null, 0) })
 <template>
   <div :class="['filters bg-[--filter-second] rounded-[22px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.10)] md:mx-auto md:w-[50vw] xl:rounded-[27px]', {'filters--Simple shadow-none': stylefilter === 'Simple'}, {'filters--Custom shadow-none md:w-[55vw]': stylefilter === 'Full'}]">
     <div :class="{'filters__primary_bg': categories && categories.length > 0, 'relative px-[60px] bg-[--filter-first] rounded-[22px] has-[+.filters-secondary]:shadow-[0px_4px_20px_0px_rgba(0,0,0,0.20)] md:px-[60px] md:z-[1] xl:rounded-[27px] xl:px-[146px]': true, 'deactive-arrows': !optionsSplideOne.arrows}" v-if="categories && categories.length > 0" ref="slider_primary">
-      <Splide :options="optionsSplideOne" :class="['filters__slider-primary [&_ul]:gap-[30px] [&_ul]:!py-[10px] [&_ul]:xl:gap-[32px] [&_ul]:xl:!py-[15px]', {'Simple [&_ul]:!py-[16px]': stylefilter === 'Simple'}, {'Custom [&_ul]:!py-[16px]': stylefilter === 'Full'}]" ref="splideOne" :key="'splide_primary'">
-        <SplideSlide :class="['item_primary filters__all', {'px-[24px] pb-[16px] pt-[10px]': stylefilter === 'Simple'}, {'px-[2px] pb-[6px]': stylefilter === 'Full'}]">
-          <BodyText wrapper="label" type="capital" :class="[{'cursor-pointer flex flex-col items-center justify-end h-full gap-[2px]': stylefilter !== 'Default'}, !current_category ? 'current-selected text-[--decorative-color]' : null]" @click.prevent="onFilter(null, 0)">
-            <Icon v-if="stylefilter !== 'Default' && reduceIcon" variant="tpc" :class="['h-[24px] w-[24px]', {'[&_svg_path:is(.fill)]:!fill-[--decorative-color] [&_svg_path:is(.stroke)]:!stroke-[--decorative-color]': !current_category}]" />
-            {{ all }}
-          </BodyText>
-        </SplideSlide>
-        <SplideSlide v-for="(item, index) in categories" :key="index" :class="['item_primary filters__items', {'px-[24px] pb-[16px] pt-[10px]': stylefilter === 'Simple'}, {'px-[2px] pb-[6px]': stylefilter === 'Full'}]">
-          <BodyText wrapper="label" type="capital" :class="[{'cursor-pointer flex flex-col items-center justify-end h-full gap-[2px]': stylefilter !== 'Default'}, current_category?.id && item.id === current_category.id ? 'current-selected text-[--decorative-color]' : null]" @click.prevent="onFilter(item, (index + 1))">
-            <Icon v-if="item.customicon && stylefilter !== 'Default'" :variant="item.customicon" :class="['h-[24px] w-[24px]', current_category?.id && item.id === current_category.id ? '[&_svg_path:is(.fill)]:!fill-[--decorative-color] [&_svg_path:is(.stroke)]:!stroke-[--decorative-color]' : null]" />
-            {{ item.category }}
-          </BodyText>
-        </SplideSlide>
-      </Splide>
+      <ClientOnly>
+        <Splide :options="optionsSplideOne" :class="['filters__slider-primary [&_ul]:gap-[30px] [&_ul]:!py-[10px] [&_ul]:xl:gap-[32px] [&_ul]:xl:!py-[15px]', {'Simple [&_ul]:!py-[16px]': stylefilter === 'Simple'}, {'Custom [&_ul]:!py-[16px]': stylefilter === 'Full'}]" ref="splideOne" :key="'splide_primary'">
+          <SplideSlide :class="['item_primary filters__all', {'px-[24px] pb-[16px] pt-[10px]': stylefilter === 'Simple'}, {'px-[2px] pb-[6px]': stylefilter === 'Full'}]">
+            <label :class="['capital', {'cursor-pointer flex flex-col items-center justify-end h-full gap-[2px]': stylefilter !== 'Default'}, !current_category ? 'current-selected text-[--decorative-color]' : null]" @click.prevent="onFilter(null, 0)">
+              <Icon v-if="stylefilter !== 'Default' && reduceIcon" variant="tpc" :class="['h-[24px] w-[24px]', {'[&_svg_path:is(.fill)]:!fill-[--decorative-color] [&_svg_path:is(.stroke)]:!stroke-[--decorative-color]': !current_category}]" />
+              {{ all }}
+            </label>
+          </SplideSlide>
+          <SplideSlide v-for="(item, index) in categories" :key="index" :class="['item_primary filters__items', {'px-[24px] pb-[16px] pt-[10px]': stylefilter === 'Simple'}, {'px-[2px] pb-[6px]': stylefilter === 'Full'}]">
+            <label :class="['capital', {'cursor-pointer flex flex-col items-center justify-end h-full gap-[2px]': stylefilter !== 'Default'}, current_category?.id && item.id === current_category.id ? 'current-selected text-[--decorative-color]' : null]" @click.prevent="onFilter(item, (index + 1))">
+              <Icon v-if="item.customicon && stylefilter !== 'Default'" :variant="item.customicon" :class="['h-[24px] w-[24px]', current_category?.id && item.id === current_category.id ? '[&_svg_path:is(.fill)]:!fill-[--decorative-color] [&_svg_path:is(.stroke)]:!stroke-[--decorative-color]' : null]" />
+              {{ item.category }}
+            </label>
+          </SplideSlide>
+        </Splide>
+      </ClientOnly>
     </div>
     <div v-if="categories && subcategories && subcategories.length > 0" ref="slider_secondary" :class="{'filters__secondary_bg filters-secondary': subcategories && subcategories.length > 0, 'px-[44px] md:px-[80px] xl:px-[167px]': true, 'deactive-arrows': !optionsSplideTwo.arrows}">
-      <Splide :options="optionsSplideTwo" class="filters__slider-secondary" ref="splideTwo"  :key="'splide_secondary'">
-        <SplideSlide class="item_secondary filters__all">
-          <BodyText wrapper="p" type="note capital" :class="!current_subcategory ? 'text-[--decorative-color]' : null" @click.prevent="onSubfilter(null, 0)">
-            {{ suball }}
-          </BodyText>
-        </SplideSlide>
-        <SplideSlide v-for="(item, index) in subcategories" :key="index" class="item_secondary filters__items">
-          <BodyText wrapper="p" type="note" :class="current_subcategory?.category_id && item.category_id === current_subcategory.category_id ? 'text-[--decorative-color]' : null" @click.prevent="onSubfilter(item, (index + 1))">
-            {{ item.category }}
-          </BodyText>
-        </SplideSlide>
-      </Splide>
+      <ClientOnly>
+        <Splide :options="optionsSplideTwo" class="filters__slider-secondary" ref="splideTwo"  :key="'splide_secondary'">
+          <SplideSlide class="item_secondary filters__all">
+            <p :class="['note capital', !current_subcategory ? 'text-[--decorative-color]' : null]" @click.prevent="onSubfilter(null, 0)">
+              {{ suball }}
+            </p>
+          </SplideSlide>
+          <SplideSlide v-for="(item, index) in subcategories" :key="index" class="item_secondary filters__items">
+            <p :class="['note capital', current_subcategory?.category_id && item.category_id === current_subcategory.category_id ? 'text-[--decorative-color]' : null]" @click.prevent="onSubfilter(item, (index + 1))">
+              {{ item.category }}
+            </p>
+          </SplideSlide>
+        </Splide>
+      </ClientOnly>
     </div>
   </div>
 </template>
